@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
+/*
+  =============================================
+  ================ Universal =================
+  =============================================
+*/
 *{
     margin: 0;
     padding: 0;
@@ -14,9 +18,24 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+
+/*
+  =============================================
+  ================ Typography =================
+  =============================================
+*/
 h1,
-h2{
+h2,
+h3{
     font-family: 'Playfair Display', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 .container{
