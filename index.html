@@ -10,52 +10,56 @@
 
     <!-- CSS File -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <!-- Navbar - start -->
     <header id="header">
         <div class="container">
             <a href="#" class="logo">Wescure</a>
-            <nav>
+            <nav id="navbar">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#" class="btn-outline">View Plans</a></li>
                 </ul>
+                <a href="#" class="btn-outline-primary">View Plans</a>
             </nav>
         </div>
     </header>
     <!-- Navbar - end -->
 
     <main id="main">
-        <section id="header">
+        <!-- Hero - start -->
+        <section id="hero">
             <div class="container">
-                <div class="header-text">
-                    <h1>Humanazing Your Insurance</h1>
-                    <p>With over 13 years of experience we'll the best guidance for you.</p>
-                    <a href="#" class="btn-outline"></a>
+                <div class="hero-text">
+                    <h1 class="anim-fadeToRight">Secure Your Future with Confidence Insurance Solutions</h1>
+                    <p class="anim-fadeToRight delay-1">Your health is your most valuable asset, and we believe that everyone deserves access to quality healthcare.</p>
+                    <a href="#" class="btn-outline-secondary">View Plans</a>
                 </div>
-                <figure class="header-img">
+                <figure class="hero-img anim-down">
                     <img src="imgs/hero.jpg" alt="Happy People">
                 </figure>
             </div>
         </section>
+        <!-- Hero - end -->
 
         <!-- About Us - start -->
         <section id="about">
             <div class="container">
                 <figure class="about-img">
-                    <img src="imgs/hero.jpg" alt="">
+                    <img src="imgs/about.jpg" alt="Family">
                 </figure>
 
                 <div class="about-text">
-                    <h2>About the Wescure</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dignissimos illo porro error incidunt debitis nostrum quis nesciunt, repellat ea deserunt beatae, laboriosam.</p>
-                    <a href="#" class="btn-outline">Read More</a>
+                    <h2>Who We Are</h2>
+                    <p>We are a leading insurance company dedicated to providing our clients with the best insurance solutions to meet their needs.</p>
+                    <a href="#" class="btn-outline-primary">Read More</a>
                 </div>
             </div>
         </section>
@@ -69,58 +73,44 @@
                     <div class="why-wescure-text-card">
                         <i class="fa-solid fa-gears"></i>
                         <h3>Easy Process</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus magni 
-                        sapiente consequuntur, placeat expedita, possimus, natus necessitatibus 
-                        voluptatum.</p>
+                        <p>We understand that insurance can be complicated, and we are committed to making the process as easy and straightforward as possible for our clients</p>
                     </div>
                     <div class="why-wescure-text-card">
                         <i class="fa-solid fa-hand-holding-dollar"></i>
                         <h3>Save Money</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus magni 
-                        sapiente consequuntur, placeat expedita, possimus, natus necessitatibus 
-                        voluptatum.</p>
+                        <p>We understand that insurance can be expensive, and we are committed to helping our clients save money on their insurance premiums.</p>
                     </div>
                     <div class="why-wescure-text-card">
                         <i class="fa-sharp fa-solid fa-star-of-life"></i>
-                        <h3>You First</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus magni 
-                        sapiente consequuntur, placeat expedita, possimus, natus necessitatibus 
-                        voluptatum.</p>
+                        <h3>Customer Focus</h3>
+                        <p>We put our clients first, and we are committed to providing them with personalized service and expert advice.</p>
                     </div>
                 </div>
-
-                <div class="thmbnail">
-                    <h2>Find out more about us</h2>
-                    <a href="#" class="btn-outline">Who we are</a>
+                <div class="thumbnail">
+                    <h2>Find out more about <br> how we work</h2>
+                    <a href="#" class="btn-outline-secondary">Who we are</a>
                 </div>
             </div>
         </section>
 
-        <section id="bottom-navbar">
+        <section id="bottom-nav">
             <div class="container">
-                <div class="top">
-                    <a href="#" class="logo">Wescure</a>
-                    <div class="socail-media">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
+                <a href="#" class="logo">Wescure</a>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" class="btn-outline">View Plans</a></li>
-                </ul>
             </div>
         </section>
-        
-        <footer id="footer">
-            <p>© Wescure Services, 2008-present</p>
-        </footer>
         <!-- Why Wescure - end -->
     </main>
+
+    <!-- Footer - start -->
+    <footer id="footer">
+        <p>© Wescure Services, 2008-present</p>
+    </footer>
+    <!-- Footer - end -->
 </body>
 </html>

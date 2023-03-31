@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 /*
   =============================================
   ================ Universal =================
@@ -18,28 +17,244 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-
 /*
   =============================================
-  ================ Typography =================
+  ================ Styles =================
   =============================================
 */
-h1,
-h2,
-h3{
+
+/* Navbar - start */
+#header{
+    background-color: #fff;
+    border-bottom: 1px solid #251736;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+#header .container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.4rem;
+    font-weight: 700;
     font-family: 'Playfair Display', serif;
+    color: #141414;
 }
 
-a{
-    text-decoration: none;
+#header #navbar{
+    display: flex;
+    align-items: center;
 }
 
-ul{
-    list-style: none;
+#header #navbar ul{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
 }
 
-.container{
-    max-width: 1440px;
-    padding: 0 3rem;
-    margin: 0 auto;
+#header #navbar ul li{
+    margin: 0 0 0 2rem;
 }
+
+#header #navbar ul li a{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #141414;
+}
+
+#header #navbar ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: #251736;
+    margin-top: 2px;
+    transition: 0.3s;
+}
+
+#header #navbar ul li a:hover::after{
+    width: 35%;
+}
+/* Navbar - end */
+
+
+/* Main - start */
+#main{
+    position: relative;
+    top: 100px;
+}
+
+/* Hero - start */
+#main #hero{
+    background-color: #251736;
+    height: auto;
+}
+
+#main #hero .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main .hero-text{
+    color: #fff;
+    margin-top: 5rem;
+    width: 50%;
+}
+
+#main .hero-text p{
+    font-size: 1.3rem;
+    margin: 2rem 0;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+#main .hero-text a{
+    position: relative;
+    top: 20px;
+}
+
+#main .hero-img{
+    width: 450px;
+    height: 500px;
+    position: relative;
+    top: 100px;
+}
+
+#main .hero-img img{
+    border-radius: 20px;
+}
+
+#main .hero-img img{
+    object-fit: cover;
+}
+/* Hero - end */
+
+/* About - start */
+#main #about{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 200px;
+}
+
+#main #about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#main #about .about-img{
+    width: 47%;
+}
+
+#main #about .about-img img{
+    border-radius: 20px;
+}
+
+#main #about .about-text{
+    width: 40%;
+}
+
+#main .about-text p{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 1rem 0 3rem 0;
+}
+/* About - end */
+
+/* Why Wescure - start */
+#main #why-wescure{
+    position: relative;
+    top: 350px;
+}
+
+#main #why-wescure .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#main .why-wescure-text-container{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-evenly;
+}
+
+#main .why-wescure-text-card{
+    width: 350px;
+}
+
+#main .why-wescure-text-card i{
+    font-size: 4rem;
+    color: #8b6cb1;
+}
+
+#main .why-wescure-text-card h3{
+    margin: 1.6rem 0 1rem 0;
+}
+
+#main .why-wescure-text-card p{
+    line-height: 1.5;
+    color: #78767a;
+}
+
+#main #why-wescure .thumbnail{
+    background-color: #251736;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    border-radius: 20px;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+#main #bottom-nav{
+    position: relative;
+    top: 400px;
+    background-color: #ececec;
+}
+
+#main #bottom-nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#main #bottom-nav .social-media a{
+    color: #141414;
+}
+
+#main #bottom-nav .social-media i{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+#main #bottom-nav .social-media i:hover{
+    color: #8b6cb1;
+}
+/* Why Wescure - end */
+
+/* Footer - start */
+#footer{
+    position: relative;
+    top: 500px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #251736;
+    color: #fff;
+    font-size: 1.3rem;
+}
+/* Footer - end */

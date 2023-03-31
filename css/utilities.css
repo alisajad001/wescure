@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/*
+  =============================================
+  ================ Typography =================
+  =============================================
+*/
+h1,
+h2,
+h3{
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+h2{
+    font-size: 3.3rem;
+}
+
+h3{
+    font-size: 2.3rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/*
+  =============================================
+  ================ Buttons =================
+  =============================================
+*/
+
+.btn-outline-primary{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #141414;
+    border: 1px solid #251736;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+}
+
+.btn-outline-primary:hover{
+    background-color: #251736;
+    color: #fff;
+}
+
+.btn-outline-secondary{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 1rem 2rem;
+    transition: 0.3s;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #fff;
+    color: #251736;
+}
+
+/*
+  =============================================
+  ================ Animations =================
+  =============================================
+*/
+
+img{
+    transition: 0.4s;
+}
+img:hover{
+    box-shadow: 10px 10px 0 #251736;
+}
+
+.anim-down{
+    animation: toDown 1.5s infinite alternate;
+}
+
+@keyframes toDown{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(20px);
+    }
+}
+
+.anim-fadeToRight{
+    animation: fadeToRight 1s ease-out;
+}
+
+@keyframes fadeToRight {
+    from{
+        opacity: 0;
+        transform: translateX(-900px); 
+    }
+
+    to{
+      opacity: 1;
+      transform: translateX(0); 
+    }
+}
+
+.delay-1{
+    animation-duration: 1.5s;
+}
+
+/*
+  =============================================
+  ================ Box Sizing =================
+  =============================================
+*/
+.container{
+    max-width: 1440px;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
