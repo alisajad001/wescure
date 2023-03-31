@@ -110,8 +110,8 @@ body{
 #main .hero-text p{
     font-size: 1.3rem;
     margin: 2rem 0;
-    line-height: 1.6;
     font-weight: 300;
+    padding: 0 10px 0 0;
 }
 
 #main .hero-text a{
@@ -163,7 +163,6 @@ body{
 
 #main .about-text p{
     font-size: 1.3rem;
-    line-height: 1.5;
     margin: 1rem 0 3rem 0;
 }
 /* About - end */
@@ -184,6 +183,7 @@ body{
     display: flex;
     margin: 3rem 0;
     justify-content: space-evenly;
+    gap: 1.6rem;
 }
 
 #main .why-wescure-text-card{
@@ -200,7 +200,6 @@ body{
 }
 
 #main .why-wescure-text-card p{
-    line-height: 1.5;
     color: #78767a;
 }
 

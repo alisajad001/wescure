@@ -1,0 +1,116 @@
+@media screen and (max-width: 1203px) {
+    #main #hero .container{
+        justify-content: space-between;
+    }
+    
+    #main .hero-text h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1092px) {
+    #main #hero .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main .hero-text{
+        width: 100%;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    #main .hero-img{
+        width: 100%;
+    }
+
+    #header #navbar ul{
+        display: none;
+    }
+    
+    
+    #main #about{
+        margin: 7rem 0;
+        top: 170px;
+        text-align: center;
+    }
+
+    #main #about .container{
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    }
+
+    #main #about .about-img{
+        width: 90%;
+        margin: 6rem 0 0 0;
+    }
+
+    #main #about .about-text{
+        width: 90%;
+    }
+
+    #main #about .about-text h2{
+        font-size: 2.7rem;
+    }
+
+    #main #why-wescure{
+        top: 270px;
+    }
+
+    #main #bottom-nav{
+        top: 200px;
+    }
+
+    #footer{
+        top: 300px;
+    }
+
+}
+
+@media screen and (max-width: 912px) {
+    .why-wescure-text-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main .why-wescure-text-card{
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    #main .why-wescure-text-card p{
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    #main .thumbnail{
+        flex-direction: column;
+        font-size: 1.1rem;
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .container{
+        padding: 0 1rem;
+    }
+
+    #main .hero-text h1{
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+
+    #main .hero-text p{
+        font-size: 1rem;
+    }
+
+    #main .why-wescure-text-card p{
+        width:auto;
+        margin: 0 auto;
+    }
+
+    #main .thumbnail h2{
+        font-size: 2rem;
+    }
+}
